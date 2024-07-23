@@ -24,6 +24,8 @@ public class City {
         this.district = district;
         this.population = population;
     }
+    public City(){ //hibernate için parametresiz default constructor kullanmamız gerekiyormuş
+    }
 
     public int getId() {
         return id;
