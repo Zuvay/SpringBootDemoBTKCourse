@@ -1,7 +1,7 @@
 package com.example.BtkCourseDemo.DataAccess;
 
 import com.example.BtkCourseDemo.Entities.City;
-import jakarta.persistence.EntityManager;
+import jakarta.persistence.*;
 import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

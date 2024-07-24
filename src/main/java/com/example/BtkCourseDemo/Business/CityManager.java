@@ -18,7 +18,7 @@ public class CityManager implements ICityService{
     @Override
     @Transactional
     public List<City> getAll() {
-        return null;
+        return this.cityDal.getAll();
     }
 
     @Override
