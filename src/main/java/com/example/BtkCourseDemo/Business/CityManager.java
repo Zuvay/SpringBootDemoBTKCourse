@@ -24,18 +24,28 @@ public class CityManager implements ICityService{
     @Override
     @Transactional
     public void add(City city) {
-
+        //Business katmanında iş kuralları yazılır
+        //Yani ben istersem burada çeşitli şartlar belirtirim
+        //Örneğin şehir türkiyede değilse ekleme olmasın falan gibi
+        this.cityDal.add(city);
     }
 
     @Override
     @Transactional
     public void update(City city) {
-
+         this.cityDal.update(city);
     }
 
     @Override
     @Transactional
     public void delete(City city) {
-
+         this.cityDal.delete(city);
     }
+
+    @Override
+    @Transactional
+    public City getById(int id) {
+        return this.cityDal.getById(id);
+    }
+
 }
